@@ -1,0 +1,59 @@
+:root
+  --highlight-color #61f0f3
+
+body
+  margin 0
+
+img
+  user-select none
+  user-drag none
+  -webkit-user-drag none
+
+::-webkit-scrollbar
+  width 4px
+  height 4px
+
+::-webkit-scrollbar-track
+  background #282b2e
+
+::-webkit-scrollbar-thumb
+  background #42a8b9
+
+#app
+  overflow hidden
+  width 100vw
+  height 100vh
+  display flex
+  justify-content center
+  align-items center
+  background #000
+
+.text_highlight
+  color #42a8b9
+
+.fade-enter-active, .fade-leave-active
+  transition all 0.2s
+
+.fade-enter-from, .fade-leave-to
+  opacity 0
+
+.fade-enter-to, .fade-leave-from
+  opacity 1
+
+.slide-top-enter-active, .slide-top-leave-active
+  transition all 0.2s
+
+.slide-top-enter-from,.slide-top-leave-to
+  transform translateY(100%)
+
+.input-enter-active, .input-leave-active
+  transition all 0.25s
+
+.input-enter-active .input-box, .input-leave-active .input-box
+  transition all 0.25s
+
+.input-enter-from, .input-leave-to
+  opacity 0
+
+.input-enter-from .input-box, .input-leave-to .input-box
+  transform translateY(100%)
